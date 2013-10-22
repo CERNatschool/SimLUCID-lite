@@ -27,19 +27,19 @@ You will need to install the following software on your system:
 Make a note of where your installations are located. For example, I
 keep my `ROOT` installation here:
 
-"""bash
+```bash
 cd $ROOTSYS # change directory to my ROOT installation directory.
 pwd # print the working directory, which is:
 > /home/twhyntie/software/root-v5-34
-"""
+```
 
 and my `GEANT4` installation here:
 
-"""bash
+```bash
 cd $GEANT4INSTALLDIR
 pwd
 > /home/twhyntie/software/geant4.9.6.p02-install/
-"""
+```
 
 You will need these for configuring `SimLUCID` later.
 
@@ -49,12 +49,12 @@ You will need these for configuring `SimLUCID` later.
 To clone the SimLUCID-lite repository to your system open a terminal
 shell and type the following commands.
 
-"""bash
+```bash
 cd $WORKINGDIR # environment variable for your working directory,
                # i.e. change directory to your working directory.
 git clone https://github.com/CERNatschool/SimLUCID-lite
 cd SimLUCID-lite
-"""
+```
 
 Advanced users may wish to *fork* the `SimLUCID-lite` repo so that
 you can play with the code and commit your own changes to your GitHub
@@ -76,23 +76,23 @@ working environment and build the `SimLUCID` program. These are:
 These are not included with the code from GitHub; rather, the `Python`
 script `configure.py` creates these for you with arguments you supply:
 
-"""bash
+```bash
 python configure.py $ROOTSYS $GEANT4INSTALLDIR
 > # output from the script
 cd simlucid-build
-"""
+```
 
 Then run the setup script to set the required environment variables:
 
-"""bash
+```bash
 source setup.sh # Run the setup script
-"""
+```
 
 Then build and make `SimLUCID`:
 
-"""bash
+```bash
 source buildandmake.sh #
-"""
+```
 
 (You can take a look at these scripts to see what they're doing, if you like.)
 
