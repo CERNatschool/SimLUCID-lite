@@ -11,7 +11,7 @@ experiment.
 Installation instructions
 -------------------------
 
-=== Operating system and environment
+=== Operating system and environment ===
 
 We run **SimLUCID** (lite) on Xubuntu 13.04. If it's easier for you,
 you can run a Xubuntu 13.04 *virtual machine* on Windows using
