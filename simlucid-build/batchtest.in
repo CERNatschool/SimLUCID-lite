@@ -1,0 +1,44 @@
+##############################################################################
+#                                  SIMLUCID
+##############################################################################
+#
+# GEANT4 input card for testing the batch running of SimLUCID.
+#
+##############################################################################
+
+##############################################################################
+# Initialise the simulation
+##############################################################################
+# initialize
+/run/initialize
+
+
+##############################################################################
+# General Particle Source (GPS)
+##############################################################################
+# Specify the particle source properties here.
+##############################################################################
+#
+# A hemi-spherical source to represent the Low Earth Orbit (LEO) space
+# environment.
+#
+#/gps/particle e-
+/gps/particle proton
+#
+/gps/ene/type Lin
+/gps/ene/min   0.0 MeV
+/gps/ene/max 400.0 MeV
+/gps/ene/gradient 0.0
+/gps/ene/intercept 1.0
+#
+/gps/pos/type Surface
+/gps/pos/shape Sphere
+/gps/pos/centre 0. 0. 0. mm
+/gps/pos/radius 49.9 mm
+/gps/pos/confine PseudoDetector_phys
+/gps/ang/type cos
+
+##############################################################################
+# Run the simulation
+##############################################################################
+/run/beamOn 10000

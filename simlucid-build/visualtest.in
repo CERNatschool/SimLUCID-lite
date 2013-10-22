@@ -1,0 +1,89 @@
+##############################################################################
+#                                  SIMLUCID
+##############################################################################
+#
+# GEANT4 input card for testing the visualisation of SimLUCID.
+#
+##############################################################################
+
+
+##############################################################################
+# Initialise the simulation
+##############################################################################
+/run/initialize
+
+##############################################################################
+# Setup the visualisation
+##############################################################################
+/vis/scene/create
+/vis/scene/add/volume World -1 2
+
+# Run options.
+/run/verbose 0
+/control/verbose 0
+/control/saveHistory
+/tracking/verbose 0
+
+##############################################################################
+# Use OpenInventor to visualise the geometry.
+##############################################################################
+/vis/open OIX 1024x768-100+100
+
+# Some other visualisation options
+#/vis/open OGLIXm 1024x768-100+100
+#/vis/open RayTracer
+#/vis/open OGLIQt
+#/vis/open OGLSQt
+#/vis/open OIX
+#/vis/open OGLIX 1024x768-100+100
+#/vis/open OGLSXm
+#/vis/open DAWNFILE
+#/vis/open OGLSX
+#/vis/open OGL 600x600-0+0
+
+/vis/viewer/set/style s
+/vis/viewer/set/background 0.4 0.5 0.6
+#/vis/viewer/set/viewpointThetaPhi 20 50
+/vis/viewer/set/viewpointThetaPhi 90. 0. deg
+#/vis/viewer/set/background 0.7 0.7 0.9
+/vis/viewer/zoom 0.5
+#
+/vis/viewer/flush
+
+
+##############################################################################
+# Particle trajectory options
+##############################################################################
+# Draw trajectories at end of the event, showing trajectory points as
+# markers of size 2 pixels
+##############################################################################
+/vis/scene/add/trajectories
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+#/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts false
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+/vis/scene/endOfEventAction accumulate
+
+
+##############################################################################
+#/tracking/verbose 2
+##############################################################################
+
+##############################################################################
+# General Particle Source (GPS)
+##############################################################################
+# Specify the particle source properties here.
+##############################################################################
+#/gps/particle e-
+/gps/particle proton
+#/gps/particle gamma
+/gps/ene/type Mono
+/gps/energy 20 MeV
+/gps/pos/type Point
+/gps/pos/centre 0.0 49.9 0.0 mm
+/gps/direction  0.12 -1 0.12
+
+##############################################################################
+# Run the simulation
+##############################################################################
+/run/beamOn 3
