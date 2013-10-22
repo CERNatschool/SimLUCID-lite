@@ -98,6 +98,20 @@ source buildandmake.sh #
 
 ### Testing
 
+If you're running on Xubuntu and have `OpenInventor` installed, you should
+be able to run the visualisation example provided:
+
+```bash
+./SimLucid visualtest.in
+```
+
+Alternatively, you can run the simulation in *batch mode* using the
+following example:
+
+```bash
+./SimLucid batchtest.in
+```
+
 ## Physics analysis using SimLUCID
 
 Instructions to follow!
