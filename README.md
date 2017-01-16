@@ -14,7 +14,7 @@ paper:
 
 i.e. the proceedings from the corresponding conference presentation
 at the
-20th International Conference on Computing in High Energy and Nuclear Physics,
+_20th International Conference on Computing in High Energy and Nuclear Physics_,
 a.k.a.
 [CHEP 2013](https://indico.cern.ch/event/214784/contributions/1512648/).
 
@@ -161,6 +161,6 @@ below.
 * The [Institute for Research in Schools](http://researchinschools.org) (IRIS) homepage;
 * The [IRIS CERN@school website](http://researchinschools.org/CERN);
 * The [IRIS GitHub repository](https://github.com/InstituteForResearchInSchools);
-* The [CHEP 2013 presentation on SimLUCID](https://indico.cern.ch/contributionDisplay.py?contribId=415&sessionId=3&confId=214784);
+* The [CHEP 2013 presentation on SimLUCID-lite](https://indico.cern.ch/contributionDisplay.py?contribId=415&sessionId=3&confId=214784);
 * The [CHEP 2013 conference proceedings](http://dx.doi.org/10.1088/1742-6596/513/2/022038) (_JINST_, Open Access);
 * The [CERN@school Document Index](http://doi.org/10.5281/zenodo.227090).
