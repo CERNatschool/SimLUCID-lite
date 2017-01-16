@@ -7,6 +7,37 @@
 Welcome! This is the GitHub repo for the GEANT4 simulation of the
 **L**angton **U**ltimate **C**osmic ray **I**ntensity **D**etector (LUCID)
 experiment.
+This code was used to generate the results featured in the CERN@school
+paper:
+
+* [T. Whyntie and M. A. Harrison, J. Phys.: Conf. Ser. 513 022038](http://dx.doi.org/10.1088/1742-6596/513/2/022038)
+
+i.e. the proceedings from the corresponding conference presentation
+at [CHEP 2013](https://indico.cern.ch/event/214784/contributions/1512648/).
+
+### Disclaimers
+
+* _This code dates from 2013. While every attempt has been
+made to ensure that it is usable, some work may be required to get it
+running on your own particular system.  Unfortunately CERN@school cannot
+guarantee support for this.  Please proceed at your own risk_.
+* _This repository is now deprecated, and remains here for legacy purposes.
+For future work regarding LUCID and CERN@school, please refer to the
+[Institute for Research in Schools](http://researchinschools.org) (IRIS)
+[GitHub repository](https://github.com/InstituteForResearchInSchools).
+Please also feel free to fork and modify this code as required for
+your own research._
+
+### Acknowledgements
+
+CERN@school was supported by
+the UK [Science and Technology Facilities Council](http://www.stfc.ac.uk) (STFC)
+via grant numbers ST/J000256/1 and ST/N00101X/1,
+as well as a Special Award from the Royal Commission for the Exhibition of 1851.
+The CERN@school Collaboration would also like to acknowledge the support
+provided by the [GridPP Collaboration](http://www.gridpp.ac.uk)
+in terms of both computing resources and technical guidance from
+collaboration members.
 
 ## Installation instructions
 
@@ -30,7 +61,7 @@ keep my `ROOT` installation here:
 ```bash
 cd $ROOTSYS # change directory to my ROOT installation directory.
 pwd # print the working directory, which is:
-> /home/twhyntie/software/root-v5-34
+> /home/alovelace/software/root-v5-34
 ```
 
 and my `GEANT4` installation here:
@@ -38,7 +69,7 @@ and my `GEANT4` installation here:
 ```bash
 cd $GEANT4INSTALLDIR
 pwd
-> /home/twhyntie/software/geant4.9.6.p02-install/
+> /home/alovelace/software/geant4.9.6.p02-install/
 ```
 
 You will need these for configuring `SimLUCID` later.
@@ -113,19 +144,20 @@ following example:
 ```
 
 ## Physics analysis using SimLUCID
-
-Instructions to follow!
-
-For now, you can look at the ROOT files produced by the simulation:
+To start to investigate the physics,
+you can look at the ROOT files produced by the simulation:
 
 * `timepix.root`
 * `pseudodet.root`
 
+Further information can be found in the CHEP 2013 paper referenced
+below.
 
-## Further reading
+## Useful links
 
-* [An introduction to LUCID](http://cernatschool.web.cern.ch/content/lucid);
-* [CHEP2013 presentation on SimLUCID](https://indico.cern.ch/contributionDisplay.py?contribId=415&sessionId=3&confId=214784);
-* [The Simon Langton Grammar School for Boys](http://www.thelangton.org.uk/);
-* [The Langton Star Centre](http://thelangtonstarcentre.org);
-* [The CERN@school website](http://cernatschool.web.cern.ch/).
+* The [Institute for Research in Schools](http://researchinschools.org) (IRIS) homepage;
+* The [IRIS CERN@school website](http://researchinschools.org/CERN);
+* The [IRIS GitHub repository](https://github.com/InstituteForResearchInSchools);
+* The [CHEP 2013 presentation on SimLUCID](https://indico.cern.ch/contributionDisplay.py?contribId=415&sessionId=3&confId=214784);
+* The [CHEP 2013 conference proceedings](http://dx.doi.org/10.1088/1742-6596/513/2/022038) (_JINST_, Open Access);
+* The [CERN@school Document Index](http://doi.org/10.5281/zenodo.227090).
