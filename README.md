@@ -13,7 +13,10 @@ paper:
 * [T. Whyntie and M. A. Harrison, J. Phys.: Conf. Ser. 513 022038](http://dx.doi.org/10.1088/1742-6596/513/2/022038)
 
 i.e. the proceedings from the corresponding conference presentation
-at [CHEP 2013](https://indico.cern.ch/event/214784/contributions/1512648/).
+at the
+20th International Conference on Computing in High Energy and Nuclear Physics,
+a.k.a.
+[CHEP 2013](https://indico.cern.ch/event/214784/contributions/1512648/).
 
 ### Disclaimers
 
